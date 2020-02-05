@@ -1,0 +1,21 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Analytics.Extensions
+
+@{
+    Layout = "MvcOuterLayout.cshtml";
+}
+
+<a class="branding branding--immovable" href="/">
+    <picture class="branding__picture">
+        <source srcset="img/logo-rockstars%402x_2.png" media="(min-width: 600px)">
+        <img src="img/logo-rockstars_1.png" alt="Rockstars IT" class="branding__image">
+    </picture>
+</a>
+
+<main>
+    <article>
+        <div class="flex">
+            @Html.Sitecore().Placeholder("page-head")
+        </div>
+    </article>
+</main>

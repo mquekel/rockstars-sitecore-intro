@@ -1,0 +1,38 @@
+﻿@using Sitecore.Data.Fields
+@using Sitecore.Data.Items
+@using Sitecore.Resources.Media
+
+@{
+    // Get Media URL
+    string mediaUrl = string.Empty;
+    ImageField image = Html.Sitecore().CurrentItem.Fields["Image"];
+    if (image != null && image.MediaItem != null)
+    {
+        mediaUrl = MediaManager.GetMediaUrl(image.MediaItem);
+    }
+
+    // Get Link Url
+    var linkUrl = string.Empty;
+    LinkField linkField = Html.Sitecore().CurrentItem.Fields["Link"];
+    if (linkField != null)
+    {
+        linkUrl = linkField.GetFriendlyUrl();
+    }
+
+    // Set styling
+    var flexStyle = string.Empty;
+    CheckboxField fullWidthField = Html.Sitecore().CurrentItem.Fields["Full Width"];
+    if (fullWidthField != null && fullWidthField.Checked)
+    {
+        flexStyle = "flex-basis: 100%; padding: 80px;";
+    }
+}
+
+<div class="flex-item flex__item--flex-headimglink" style="@flexStyle">
+    <a class="flex-item-rim" href="@linkUrl">
+        <div class="flex-item-bg" style="background-image: url('@mediaUrl');"></div>
+        <div class="flex-item-content">
+            <h2>@Html.Sitecore().Field("Title")</h2>
+        </div>
+    </a>
+</div>

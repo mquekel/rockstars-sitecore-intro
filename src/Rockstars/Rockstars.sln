@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29123.88
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "Docker\docker-compose.dcproj", "{56AC5280-F5C2-4DA1-BAB5-EB2EB62A12E6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "{33D39891-5196-489C-9AB6-723AD3F81850}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Website", "Website\Website.csproj", "{6E7C6C82-52E3-4C4C-9410-EB1DE4AFCD72}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		DebugCD|Any CPU = DebugCD|Any CPU
+		DebugCM|Any CPU = DebugCM|Any CPU
+		Release|Any CPU = Release|Any CPU
+		ReleaseCD|Any CPU = ReleaseCD|Any CPU
+		ReleaseCM|Any CPU = ReleaseCM|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56AC5280-F5C2-4DA1-BAB5-EB2EB62A12E6}.Debug|Any CPU.ActiveCfg = DebugCM|Any CPU
+		{56AC5280-F5C2-4DA1-BAB5-EB2EB62A12E6}.Debug|Any CPU.Build.0 = DebugCM|Any CPU
+		{56AC5280-F5C2-4DA1-BAB5-EB2EB62A12E6}.DebugCD|Any CPU.ActiveCfg = DebugCD|Any CPU
+		{56AC5280-F5C2-4DA1-BAB5-EB2EB62A12E6}.DebugCD|Any CPU.Build.0 = DebugCD|Any CPU
+		{56AC5280-F5C2-4DA1-BAB5-EB2EB62A12E6}.DebugCM|Any CPU.ActiveCfg = DebugCM|Any CPU
+		{56AC5280-F5C2-4DA1-BAB5-EB2EB62A12E6}.DebugCM|Any CPU.Build.0 = DebugCM|Any CPU
+		{56AC5280-F5C2-4DA1-BAB5-EB2EB62A12E6}.Release|Any CPU.ActiveCfg = ReleaseCM|Any CPU
+		{56AC5280-F5C2-4DA1-BAB5-EB2EB62A12E6}.Release|Any CPU.Build.0 = ReleaseCM|Any CPU
+		{56AC5280-F5C2-4DA1-BAB5-EB2EB62A12E6}.ReleaseCD|Any CPU.ActiveCfg = ReleaseCD|Any CPU
+		{56AC5280-F5C2-4DA1-BAB5-EB2EB62A12E6}.ReleaseCD|Any CPU.Build.0 = ReleaseCD|Any CPU
+		{56AC5280-F5C2-4DA1-BAB5-EB2EB62A12E6}.ReleaseCM|Any CPU.ActiveCfg = ReleaseCM|Any CPU
+		{56AC5280-F5C2-4DA1-BAB5-EB2EB62A12E6}.ReleaseCM|Any CPU.Build.0 = ReleaseCM|Any CPU
+		{6E7C6C82-52E3-4C4C-9410-EB1DE4AFCD72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E7C6C82-52E3-4C4C-9410-EB1DE4AFCD72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E7C6C82-52E3-4C4C-9410-EB1DE4AFCD72}.DebugCD|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E7C6C82-52E3-4C4C-9410-EB1DE4AFCD72}.DebugCD|Any CPU.Build.0 = Debug|Any CPU
+		{6E7C6C82-52E3-4C4C-9410-EB1DE4AFCD72}.DebugCM|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E7C6C82-52E3-4C4C-9410-EB1DE4AFCD72}.DebugCM|Any CPU.Build.0 = Debug|Any CPU
+		{6E7C6C82-52E3-4C4C-9410-EB1DE4AFCD72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E7C6C82-52E3-4C4C-9410-EB1DE4AFCD72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E7C6C82-52E3-4C4C-9410-EB1DE4AFCD72}.ReleaseCD|Any CPU.ActiveCfg = Release|Any CPU
+		{6E7C6C82-52E3-4C4C-9410-EB1DE4AFCD72}.ReleaseCD|Any CPU.Build.0 = Release|Any CPU
+		{6E7C6C82-52E3-4C4C-9410-EB1DE4AFCD72}.ReleaseCM|Any CPU.ActiveCfg = Release|Any CPU
+		{6E7C6C82-52E3-4C4C-9410-EB1DE4AFCD72}.ReleaseCM|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6E7C6C82-52E3-4C4C-9410-EB1DE4AFCD72} = {33D39891-5196-489C-9AB6-723AD3F81850}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
+		SolutionGuid = {F1EDAE88-592D-4433-84D5-0B90870F3E34}
+	EndGlobalSection
+EndGlobal

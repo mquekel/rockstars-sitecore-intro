@@ -1,0 +1,23 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.ExperienceForms.Mvc.Html
+@using Sitecore.Mvc.Analytics.Extensions
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>@Html.Sitecore().Field("title", new { DisableWebEdit = true })</title>
+    @Html.Sitecore().VisitorIdentification()
+    @Html.RenderFormStyles()
+    @Html.RenderFormScripts()
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png?v=2">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png?v=2">
+    <link rel="stylesheet" media="all" href="css/reset.css" />
+    <link rel="stylesheet" media="all" href="css/main.css" />
+</head>
+<body>
+    @RenderBody()
+</body>
+</html>
