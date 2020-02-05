@@ -311,3 +311,8 @@ input[type="submit"] {
         background-color: #000000;
         color: #ffffff;
     }
+
+.buttons {
+    position: absolute;
+    bottom: 10px;
+}

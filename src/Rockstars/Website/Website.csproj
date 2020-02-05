@@ -487,6 +487,8 @@
     <Content Include="Views\Components\PromoItem.cshtml" />
     <Content Include="Views\Components\FormWrapper.cshtml" />
     <Content Include="Views\PromoItem\Index.cshtml" />
+    <Content Include="Views\FormBuilder\FieldTemplates\CheckboxList.cshtml" />
+    <Content Include="Views\FormBuilder\FieldTemplates\RadioButtonList.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
